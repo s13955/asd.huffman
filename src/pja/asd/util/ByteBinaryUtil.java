@@ -8,7 +8,7 @@ public class ByteBinaryUtil {
 
         byte[] encodedBytes = new byte[chunks];
 
-        for(int i = 0; i < length / size; i++) {
+        for(int i = 0; i < chunks; i++) {
             String sub = input.substring(i * size, Math.min((i + 1) * size, length));
             byte encodedByte = 0;
 
